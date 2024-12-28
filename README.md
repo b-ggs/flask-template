@@ -54,7 +54,7 @@ Spin up the development server.
 
 ```bash
 # Inside the Flask Docker container
-djrun
+flaskrun
 ```
 
 The Flask app will be available at http://localhost:8000/.
