@@ -50,7 +50,7 @@ RUN --mount=type=cache,target=/home/flask_template/.cache/pypoetry,uid=1000 \
 EXPOSE 8000
 
 # Serve project with gunicorn
-CMD ["gunicorn", "flask_template.wsgi:application"]
+CMD ["gunicorn", "flask_template:create_app()"]
 
 ##########################
 # Production build stage #
